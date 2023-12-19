@@ -23,7 +23,11 @@ public interface ItemDAO {
 
     boolean updateItem(List<OrderDetailDTO> orderDetails) throws SQLException, ClassNotFoundException;
 
+    boolean updateItem(OrderDetailDTO dto) throws SQLException, ClassNotFoundException;
+
     boolean updateItems(OrderDetailDTO dto) throws SQLException, ClassNotFoundException;
+
+    boolean updateItems(List<OrderDetailDTO> orderDetails) throws SQLException, ClassNotFoundException;
 
     ItemDTO findItem(String code) throws SQLException, ClassNotFoundException;
 }
