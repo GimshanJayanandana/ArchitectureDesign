@@ -1,4 +1,4 @@
-package com.example.layeredarchitecture.DAO;
+package com.example.layeredarchitecture.DAO.Custom;
 
 import com.example.layeredarchitecture.model.ItemDTO;
 import com.example.layeredarchitecture.model.OrderDetailDTO;
@@ -26,8 +26,6 @@ public interface ItemDAO {
     boolean updateItem(OrderDetailDTO dto) throws SQLException, ClassNotFoundException;
 
     boolean updateItems(OrderDetailDTO dto) throws SQLException, ClassNotFoundException;
-
-    boolean updateItems(List<OrderDetailDTO> orderDetails) throws SQLException, ClassNotFoundException;
 
     ItemDTO findItem(String code) throws SQLException, ClassNotFoundException;
 }

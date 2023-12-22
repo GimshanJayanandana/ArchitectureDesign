@@ -1,5 +1,8 @@
-package com.example.layeredarchitecture.DAO;
+package com.example.layeredarchitecture.DAO.Custom.Impl;
 
+import com.example.layeredarchitecture.DAO.Custom.ItemDAO;
+import com.example.layeredarchitecture.DAO.Custom.OrderDAO;
+import com.example.layeredarchitecture.DAO.Custom.OrderDetailDAO;
 import com.example.layeredarchitecture.db.DBConnection;
 import com.example.layeredarchitecture.model.CustomerDTO;
 import com.example.layeredarchitecture.model.ItemDTO;
@@ -10,7 +13,7 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-public class OrderDAOImpl implements OrderDAO{
+public class OrderDAOImpl implements OrderDAO {
 
     /*To refactor the transaction we need to brake down the code for smaller parts
       1.Need to have a orderDetailDAO to implementation of the saving the order details

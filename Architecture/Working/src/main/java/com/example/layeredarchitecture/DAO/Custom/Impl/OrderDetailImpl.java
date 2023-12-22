@@ -1,5 +1,6 @@
-package com.example.layeredarchitecture.DAO;
+package com.example.layeredarchitecture.DAO.Custom.Impl;
 
+import com.example.layeredarchitecture.DAO.Custom.OrderDetailDAO;
 import com.example.layeredarchitecture.db.DBConnection;
 import com.example.layeredarchitecture.model.OrderDetailDTO;
 
@@ -8,7 +9,7 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.List;
 
-public class OrderDetailImpl implements  OrderDetailDAO{
+public class OrderDetailImpl implements OrderDetailDAO {
     @Override
     public boolean saveDetails(String orderId, List<OrderDetailDTO> orderDetails) throws SQLException, ClassNotFoundException {
         for (OrderDetailDTO dto : orderDetails) {
